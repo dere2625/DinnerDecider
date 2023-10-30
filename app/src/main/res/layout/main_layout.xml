@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dd_logo"
+        android:id="@+id/logo"
+        android:contentDescription="@string/logo_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtChosenFood"
+        android:fontFamily="monospace"
+        android:layout_marginTop="16dp"
+        android:text="@string/no_food_selected"
+        android:textSize="20sp"
+        android:layout_below="@+id/logo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/add_new_food"
+        android:layout_below="@+id/txtChosenFood"
+        android:padding="5dp"
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:layout_margin="16dp"
+        android:id="@+id/edit_food"
+        android:autofillHints="Burger, Cheese cake" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add_food"
+        android:textAllCaps="false"
+        android:layout_below="@+id/edit_food"
+        android:id="@+id/btn_addFood"
+        android:fontFamily="monospace"
+        android:background="@color/teal_200"
+        android:layout_margin="16dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/decide"
+        android:layout_margin="16dp"
+        android:fontFamily="monospace"
+        android:textAllCaps="false"
+        android:id="@+id/btn_decideFood"
+        android:background="@color/teal_200"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
